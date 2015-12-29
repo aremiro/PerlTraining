@@ -13,7 +13,7 @@ my $c = $ARGV[2];
 
 print STDOUT "Function is ${a}xx + ${b}x + $c  \n";
 
-my $rootDeterminator = $b*$b - 4*$a*$c;
+my $rootDeterminator = $b**2 - 4*$a*$c;
 
 if ($rootDeterminator < 0) {
 
