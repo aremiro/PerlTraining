@@ -27,12 +27,13 @@ while (<>) {
 }
 
 
-foreach my $key (@replacementsList) {
+#foreach my $key (@replacementsList) {
+#
+#  $text =~ s/$key/$replacementsMap{$key}/g;
+#
+#}
 
-  $text =~ s/$key/$replacementsMap{$key}/g;
-
-}
-
+$text =~ s/(@{[join "|", keys %replacementsMap]})/$replacementsMap{$1}/g;
 
 
 print STDOUT $text . "\n";
