@@ -55,7 +55,6 @@ sub isConsistent {
 
 sub draw {
 	my ($self, $filename) = @_;
-	print "filename is {$filename} ";
 
 	my $width = $self->{_topRight}->{_x} - $self->{_topLeft}->{_x};
 	my $height = $self->{_topRight}->{_y} - $self->{bottomRight}->{_y};

@@ -14,15 +14,20 @@ sub new {
 }
 
 sub setCenter {
-	 my ( $self, _center) = @_;
+	 my ( $self, $center) = @_;
 	 $self->{_center} = $center if defined $center; 
 	 return $self._center; 
 }
 
 sub setPerimeterPoint {
-	 my ( $self, _perimeterPoint) = @_;
+	 my ( $self, $perimeterPoint) = @_;
 	 $self->{_perimeterPoint} = $perimeterPoint if defined $perimeterPoint; 
 	 return $self._perimeterPoint; 
+}
+
+sub draw {
+	my ($self, $filename) = @_;
+
 }
 
 
